@@ -1,0 +1,1733 @@
+body {
+    background: none !important;
+}
+
+* {
+    user-select: none;
+}
+
+:root {
+    --web-view-ids: Canvas;
+}
+
+.mediaViewInfo {
+    --web-view-name: Canvas;
+    --web-view-id: Canvas;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: width;
+    --web-enable-scale-up: true;
+    --web-scale-on-resize: true;
+    --web-center-vertically: true;
+    --web-enable-deep-linking: true;
+}
+
+i {
+    margin-top: 4px;
+    padding-right: 10px;
+}
+
+.menubar i {
+    margin-top: -4px;
+    padding-right: 2px;
+}
+
+#Canvas {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    opacity: 1;
+    overflow: hidden;
+    --web-view-name: Canvas;
+    --web-view-id: Canvas;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: width;
+    --web-enable-scale-up: true;
+    --web-scale-on-resize: true;
+    --web-center-vertically: true;
+    --web-enable-deep-linking: true;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    left: 0px;
+    opacity: 1;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(21, 29, 41, 0.99)25%, rgba(0, 0, 0, 0.8) 75%);
+}
+
+.mainnotify {
+    box-sizing: border-box;
+    position: absolute;
+    width: 395px;
+    height: 44.81px;
+    z-index: 9;
+    display: none;
+    left: 1194px;
+    top: 23.68px;
+    background: #4f5d719a;
+    border-radius: 5px;
+}
+
+.mainnotify .text {
+    position: absolute;
+    width: 395px;
+    height: 45px;
+    left: 0.05px;
+    top: 9px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tophr {
+    position: absolute;
+    width: 1778px;
+    height: 0px;
+    left: 71px;
+    top: 90px;
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.menu-1 {
+    position: absolute;
+    width: 189px;
+    height: 53px;
+    left: 83px;
+    top: 37px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.295em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 11px rgba(255, 255, 255, 0.25);
+}
+
+.menu-2 {
+    position: absolute;
+    width: 189px;
+    height: 53px;
+    left: 295px;
+    top: 37px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.295em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-3 {
+    position: absolute;
+    width: 209;
+    height: 53px;
+    left: 495px;
+    top: 37px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.295em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-4 {
+    position: absolute;
+    width: 189px;
+    height: 53px;
+    left: 723px;
+    top: 37px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.295em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu1-hr {
+    position: absolute;
+    width: 212px;
+    height: 1px;
+    left: 71px;
+    top: 90px;
+    background: rgba(231, 76, 60, 0.66);
+    box-shadow: 0px 0px 21px 2px rgba(231, 76, 60, 0.25);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu2-hr {
+    position: absolute;
+    width: 212px;
+    height: 1px;
+    left: 283px;
+    top: 90px;
+    background: rgba(231, 76, 60, 0.66);
+    box-shadow: 0px 0px 21px 2px rgba(231, 76, 60, 0.25);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu3-hr {
+    position: absolute;
+    width: 212px;
+    height: 1px;
+    left: 494px;
+    top: 90px;
+    background: rgba(231, 76, 60, 0.66);
+    box-shadow: 0px 0px 21px 2px rgba(231, 76, 60, 0.25);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu4-hr {
+    position: absolute;
+    width: 212px;
+    height: 1px;
+    left: 707px;
+    top: 90px;
+    background: rgba(231, 76, 60, 0.66);
+    box-shadow: 0px 0px 21px 2px rgba(231, 76, 60, 0.25);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.menu-1:hover,
+.menu-2:hover,
+.menu-3:hover {
+    transform: scaleX(1.05);
+}
+
+.coinsbox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 286.95px;
+    height: 44.81px;
+    left: 1611px;
+    top: 23.49px;
+    background: #0D1218;
+    border-radius: 5px;
+    transform: rotate(-0.1deg);
+}
+
+.coinsbox .coins {
+    position: absolute;
+    width: 287px;
+    height: 45px;
+    left: 0px;
+    top: 9px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-1 {
+    position: absolute;
+    width: 1920px;
+    height: 989px;
+    left: 0px;
+    top: 91px;
+}
+
+.mainbox-2 {
+    position: absolute;
+    width: 1826px;
+    height: 981px;
+    left: 41px;
+    top: 99px;
+}
+
+.mainbox-3 {
+    position: absolute;
+    width: 1920px;
+    height: 989px;
+    left: 0px;
+    top: 91px;
+}
+
+.mainbox-4 {
+    position: absolute;
+    width: 1920px;
+    height: 989px;
+    left: 0px;
+    top: 91px;
+}
+
+.mainbox-1 .bigwin {
+    box-sizing: border-box;
+    position: absolute;
+    width: 498.39px;
+    height: 309.46px;
+    left: 711.25px;
+    top: 111.85px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0726) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+    transform: rotate(-0.1deg);
+}
+
+.mainbox-1 .bigwin .text {
+    position: absolute;
+    width: 239px;
+    height: 26px;
+    left: 17.56px;
+    top: 12.74px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.275em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-1 .bigwin .hr {
+    position: absolute;
+    width: 138px;
+    height: 1px;
+    left: 255.75px;
+    top: 26.06px;
+}
+
+.mainbox-1 .bigwin .box1 {
+    position: absolute;
+    width: 316px;
+    height: 184px;
+    left: 99.73px;
+    top: 59.88px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 17px 13px rgba(0, 102, 255, 0.05);
+    border-radius: 3px;
+}
+
+.mainbox-1 .bigwin .box1 .img {
+    position: absolute;
+    width: 253px;
+    height: 116px;
+    left: 32px;
+    top: 34px;
+}
+
+.mainbox-1 .name {
+    position: absolute;
+    width: 603px;
+    height: 54px;
+    left: 535px;
+    top: 479px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.25);
+}
+
+.mainbox-1 .ticketcount {
+    position: absolute;
+    width: 289px;
+    height: 33px;
+    left: 1096px;
+    top: 493px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    align-items: right;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-1 .box2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 849.37px;
+    height: 290.18px;
+    left: 535.13px;
+    top: 534.87px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0726) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+}
+
+.mainbox-1 .box2 .text {
+    position: absolute;
+    width: 751px;
+    height: 239px;
+    left: 49.87px;
+    top: 22.58px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 239px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.175em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.mainbox-2 .mainbox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1750.67px;
+    height: 891.24px;
+    left: 43px;
+    top: 15.99px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0726) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+    transform: rotate(-0.1deg);
+}
+
+.mainbox-2 .mainbox .toptext {
+    position: absolute;
+    width: 239px;
+    height: 26px;
+    left: 44.88px;
+    top: 34.96px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.39em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-2 .mainbox .tophr {
+    position: absolute;
+    width: 360px;
+    height: 0px;
+    left: 182px;
+    top: 48px;
+}
+
+.mainbox-2 .mainbox .shop {
+    position: absolute;
+    width: 1443px;
+    height: 829px;
+    left: 163px;
+    top: 65px;
+}
+
+.mainbox-2 .mainbox .shop .box {
+    position: relative;
+    float: left;
+    width: 636px;
+    margin-top: 35px;
+    padding-right: 10px;
+    margin-left: 35px;
+    height: 203px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+}
+
+.coverboxshop {
+    position: absolute;
+    width: 1820px;
+    height: 955px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    left: 40px;
+    top: 0px;
+}
+
+.mainbox-2 .mainbox .shop .box .img {
+    position: absolute;
+    width: 191px;
+    height: 95px;
+    left: 12px;
+    top: 53px;
+}
+
+.mainbox-2 .mainbox .shop .box .title {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 218px;
+    top: 16px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.175em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-2 .mainbox .shop .box .desc {
+    position: absolute;
+    width: 397px;
+    height: 74px;
+    left: 218px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-2 .mainbox .shop .box .button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 395px;
+    height: 44.81px;
+    left: 219.95px;
+    top: 137.68px;
+    background: #4F5D71;
+    border-radius: 5px;
+    transform: rotate(-0.1deg);
+}
+
+.mainbox-2 .mainbox .shop .box .button:hover {
+    background: #3a4452;
+}
+
+.mainbox-2 .mainbox .shop .box .button:active {
+    background: #4F5D71;
+}
+
+.mainbox-2 .mainbox .shop .box .button .text {
+    position: absolute;
+    width: 395px;
+    height: 45px;
+    left: 0.05px;
+    top: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .mainbox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1750.67px;
+    height: 891.24px;
+    left: 84px;
+    top: 23.99px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0726) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+}
+
+.mainbox-3 .mainbox .toptext {
+    position: absolute;
+    width: 309px;
+    height: 26px;
+    left: 44.88px;
+    top: 34.96px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.39em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .mainbox .tophr {
+    position: absolute;
+    width: 360px;
+    height: 0px;
+    left: 182px;
+    top: 48px;
+}
+
+.mainbox-3 .mainbox .toptext1 {
+    position: absolute;
+    width: 833px;
+    height: 79px;
+    left: 460px;
+    top: 189px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .mainbox .desc {
+    position: absolute;
+    width: 614px;
+    height: 69px;
+    left: 570px;
+    top: 258px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 69px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.mainbox-3 .mainbox .box {
+    position: absolute;
+    width: 636px;
+    height: 203px;
+    left: 559px;
+    top: 345px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.mainbox-3 .mainbox .box .img {
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    left: 28px;
+    top: 19px;
+}
+
+.mainbox-3 .mainbox .box .text {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 212px;
+    top: 17px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .mainbox .box .input {
+    position: absolute;
+    width: 395px;
+    height: 44.81px;
+    left: 212px;
+    top: 55.68px;
+    outline: none;
+    border: none;
+    color: white;
+    background: rgba(79, 93, 113, 0.33);
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .mainbox .box .button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 395px;
+    height: 44.81px;
+    left: 211.95px;
+    top: 128.68px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.mainbox-3 .mainbox .box .button:hover {
+    background: #3d4858;
+}
+
+.mainbox-3 .mainbox .box .button:active {
+    background: #4F5D71;
+}
+
+.mainbox-3 .mainbox .box .button .textss {
+    position: absolute;
+    width: 395px;
+    pointer-events: none;
+    height: 38px;
+    left: 0px;
+    top: 9px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-3 .notify {
+    box-sizing: border-box;
+    position: absolute;
+    width: 636px;
+    height: 44.81px;
+    left: 643px;
+    top: 585.09px;
+    background: rgba(0, 44, 7, 0.77);
+    border-radius: 5px;
+}
+
+.mainbox-3 .notify .text {
+    position: absolute;
+    width: 628px;
+    height: 45px;
+    left: 0.01px;
+    top: 8.31px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bglayer1 {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    pointer-events: none;
+}
+
+.bglayer2 {
+    pointer-events: none;
+    position: absolute;
+    width: 761px;
+    height: 268px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.loader {
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 30px;
+    left: 180px;
+}
+
+.loader:after {
+    content: " ";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mainbox-4 .button1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 286.95px;
+    height: 44.81px;
+    left: 84px;
+    top: 20.49px;
+    background: #0D1218;
+    border-radius: 5px;
+}
+
+.mainbox-4 .button1 .text {
+    position: absolute;
+    width: 287px;
+    height: 45px;
+    left: 0px;
+    top: 8px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    pointer-events: none;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .button2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 286.95px;
+    height: 44.81px;
+    left: 379px;
+    top: 20.49px;
+    background: #0D1218;
+    border-radius: 5px;
+}
+
+.mainbox-4 .button2 .text {
+    position: absolute;
+    width: 287px;
+    height: 45px;
+    left: 0px;
+    top: 8px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    pointer-events: none;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1750.67px;
+    height: 879.42px;
+    left: 84.13px;
+    top: 85.17px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0726) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 5px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    transition: all 300ms;
+    background: #17202b;
+}
+
+.button1:active,
+.button2:active,
+.button3:active {
+    transition: all 300ms;
+    background: #0D1218;
+}
+
+.mainbox-4 .main .toptext {
+    position: absolute;
+    width: 396px;
+    height: 26px;
+    left: 35px;
+    top: 25px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    align-items: center;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order {
+    position: absolute;
+    width: 1453px;
+    height: 479px;
+    left: 155.87px;
+    top: 75.82px;
+}
+
+.mainbox-4 .main .order .blackbox {
+    position: relative;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 450px;
+    height: 196px;
+    left: 0px;
+    top: 21px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .order .blackbox .name {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 25.87px;
+    top: 14.82px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.custom-select {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    position: absolute;
+    width: 395px;
+    height: 53px;
+    left: 27px;
+    top: 54px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5 5 0px 0px;
+}
+
+.select-selected-bottom-rounded {
+    border-radius: 5 5 5 5;
+}
+
+.select-selected-bottom-square {
+    border-radius: 5 5 0px 0px;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 36%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #505050 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 25%;
+}
+
+.select-items {
+    border-radius: 0px 0px 10px 10px;
+    height: 125px;
+    overflow-y: auto;
+    position: absolute;
+    background: #4F5D71;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 10px 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+.mainbox-4 .main .order .blackbox .buttonlong {
+    box-sizing: border-box;
+    position: absolute;
+    width: 395px;
+    height: 44.81px;
+    left: 27px;
+    top: 122.68px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.buttonlong:hover,
+.addcoins:hover,
+.removecoins:hover,
+.clearconsole:hover,
+.copyconsole:hover,
+.tombula .button1:hover {
+    opacity: 0.9;
+}
+
+.buttonlong:active,
+.addcoins:active,
+.removecoins:active,
+.clearconsole:active,
+.copyconsole:active,
+.tombula .button1:active {
+    opacity: 1.0;
+}
+
+.mainbox-4 .main .order .blackbox .buttonlong .text {
+    position: absolute;
+    width: 395px;
+    height: 45px;
+    left: 0.05px;
+    top: 8px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .itembox {
+    position: absolute;
+    width: 263px;
+    height: 40px;
+    left: 26px;
+    top: 53px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans';
+    font-style: normal;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .itemboxnr {
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    left: 306px;
+    top: 53px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans';
+    font-style: normal;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .id {
+    position: absolute;
+    width: 149px;
+    height: 38px;
+    left: 60px;
+    top: 43px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .idinput {
+    position: absolute;
+    width: 150px;
+    height: 37px;
+    left: 59px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    top: 77px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .amountinput {
+    position: absolute;
+    width: 150px;
+    height: 37px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    left: 241px;
+    top: 77px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .amount {
+    position: absolute;
+    width: 149px;
+    height: 38px;
+    left: 242px;
+    top: 43px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .addcoins {
+    box-sizing: border-box;
+    position: absolute;
+    width: 179px;
+    height: 44.81px;
+    left: 32px;
+    top: 134.31px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .order .blackbox .addcoins .text {
+    position: absolute;
+    width: 179px;
+    height: 45px;
+    left: 0px;
+    top: 8px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .removecoins {
+    box-sizing: border-box;
+    position: absolute;
+    width: 179px;
+    height: 44.81px;
+    left: 238.08px;
+    top: 134.31px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .order .blackbox .removecoins .text {
+    position: absolute;
+    width: 179px;
+    height: 45px;
+    left: 0px;
+    top: 8px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .order .blackbox .longinput {
+    position: absolute;
+    width: 395px;
+    height: 40px;
+    left: 28px;
+    top: 62px;
+    background: rgba(0, 0, 0, 0.22);
+    font-family: 'Open Sans';
+    font-style: normal;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .console {
+    position: absolute;
+    width: 903px;
+    height: 205px;
+    left: 195.87px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.22);
+    top: 567px;
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .console .header {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 22.87px;
+    top: 1.82px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .console .desc {
+    position: absolute;
+    width: 866px;
+    height: 148px;
+    padding-left: 15px;
+    padding-top: 10px;
+    outline: none;
+    resize: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.22);
+    left: 20px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .amountcodes {
+    position: absolute;
+    width: 450px;
+    height: 99px;
+    left: 1132px;
+    top: 342px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .amountcodes .text {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 32px;
+    top: 27.82px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .amountcodes .input {
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    left: 303.13px;
+    top: 28px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.77);
+    outline: none;
+    border: none;
+}
+
+.mainbox-4 .main .discordlog {
+    position: absolute;
+    width: 450px;
+    height: 95px;
+    left: 1132px;
+    top: 445px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.mainbox-4 .main .discordlog .text {
+    position: absolute;
+    width: 386px;
+    height: 38px;
+    left: 32px;
+    top: 27.82px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainbox-4 .main .discordlog .checkbox {
+    position: absolute;
+    left: 340px;
+    top: 28px;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: #4F5D71;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.clearconsole {
+    box-sizing: border-box;
+    position: absolute;
+    width: 183.27px;
+    height: 35.49px;
+    left: 720px;
+    bottom: 60.31px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.clearconsole .text {
+    position: absolute;
+    width: 183px;
+    height: 36px;
+    left: 0px;
+    top: 4px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.copyconsole {
+    box-sizing: border-box;
+    position: absolute;
+    width: 183.27px;
+    height: 35.49px;
+    left: 915px;
+    bottom: 60.31px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.copyconsole .text {
+    position: absolute;
+    width: 183px;
+    height: 35.49px;
+    left: 0px;
+    top: 3px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.historytable {
+    overflow: scroll;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.content-table thead tr {
+    background: transparent;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 57px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2732);
+}
+
+.content-table tbody tr {}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: transparent;
+}
+
+.content-table tbody tr:last-of-type {}
+
+.content-table tbody tr.active-row {
+    color: #ffff;
+}
+
+.xx {
+    box-sizing: border-box;
+    width: 103.73px;
+    height: 26.66px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.xx:hover {
+    background: #444e5d;
+}
+
+.xx:active {
+    background: #4F5D71;
+}
+
+.xx .text {
+    position: relative;
+    width: 103.73px;
+    height: 27px;
+    left: 0px;
+    top: 2px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tombula {
+    position: absolute;
+    width: 450px;
+    height: 205px;
+    left: 1132px;
+    top: 567px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.tombula .text {
+    position: absolute;
+    width: 319px;
+    height: 38px;
+    left: 29px;
+    top: 11px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tombula .active {
+    position: absolute;
+    width: 104px;
+    height: 24px;
+    left: 170px;
+    top: 56px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #48BC12;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tombula .date {
+    position: absolute;
+    width: 386px;
+    height: 44px;
+    left: 29px;
+    top: 90px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tombula .button1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 133.3px;
+    height: 44.81px;
+    left: 155px;
+    top: 142.23px;
+    background: #4F5D71;
+    border-radius: 5px;
+}
+
+.tombula .button1 .textrr {
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    left: 0px;
+    top: 10px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.endindatetombula {
+    position: absolute;
+    width: 289px;
+    height: 22px;
+    left: 126.73px;
+    top: 246.88px;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-aspect-ratio: 21/9) {
+    #Canvas {
+        all: unset !important;
+    }
+}
